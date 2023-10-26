@@ -1,0 +1,8 @@
+<div class="home-main-title text-center font-carter-one">Let's begin</div>
+
+<div class="main-menu-container">
+  <div class="main-menu pointer font-gochi-hand" *ngFor="let item of menuObject" (click)="getSelectedMenu(item)">
+    {{item['name']}}
+  </div>
+</div>
+<!--<router-outlet></router-outlet>-->

@@ -1,0 +1,19 @@
+<div *ngIf="!showAgainButton" class="text-center">
+<div class="expression">
+<div *ngIf="sign">
+{{firstNumber}} x {{secondNumber}}
+</div>
+<div *ngIf="!sign">
+{{currentAnswer}} / {{firstNumber}}
+</div>
+</div>
+
+<div class="input-container ">
+<!--<input class="custom-input" type="text" [(ngModel)]="inputValue" #box (keyup)="valuechange($event)"-->
+<!--(keyup.enter)="onEnter()">-->
+  <app-input-answer></app-input-answer>
+</div>
+
+<div class="error-message" *ngIf="errorMessage">ERROR! THINK WELL!</div>
+
+</div>

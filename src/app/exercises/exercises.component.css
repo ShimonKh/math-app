@@ -1,0 +1,81 @@
+.flex-container {
+  padding: 25px 0 0 0;
+  margin: 10px;
+  /*list-style: none;*/
+
+  /*-ms-box-orient: horizontal;*/
+  /*display: -webkit-box;*/
+  /*display: -moz-box;*/
+  /*display: -ms-flexbox;*/
+  /*display: -moz-flex;*/
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+
+  /*-webkit-justify-content: space-around;*/
+  /*justify-content: space-around;*/
+  /*-webkit-flex-flow: row wrap;*/
+  /*flex-flow: row wrap;*/
+  /*-webkit-align-items: stretch;*/
+  /*align-items: stretch;*/
+}
+
+.flex-item {
+  text-align: center;
+  display: inline-block;
+  width: 190px;
+  height: 30px;
+  /*flex-grow: 0;*/
+  font-size: 24px;
+  color: black;
+  box-sizing: border-box;
+}
+
+
+
+
+.tasks-left-color {
+  /*color: #ec43ec;*/
+  color: var(--color-secondary-2-2);
+}
+
+.button-text {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.input-container{
+  margin-top: 10px;
+}
+.expression{
+  margin-top: 30px;
+  font-size: 40px;
+}
+.error-message{
+  margin-top: 20px;
+  font-size:28px;
+  font-weight: bold;
+  color: var(--color-error);
+}
+.exercise-container{
+  min-height: 350px;
+}
+.return-link{
+  bottom: 20px;
+  right: 20px;
+  color: var(--color-secondary-2-3);
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+.return-link:hover{
+  font-size: 16px;
+  /*color: var(--color-primary-0)*/
+}
+
+.level-button-start{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}

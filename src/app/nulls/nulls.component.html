@@ -1,0 +1,37 @@
+<div class="clearfix">
+
+  <div class="info">Total: <span class="size28">{{totalTasks}}</span></div>
+  <div class="info">Tasks left: <span class="tasks-left-color size28">{{tasksLeft}}</span></div>
+  <div class="info text-center">Right: <span class="right-color size28">{{rightAnswer}}</span></div>
+  <div class="info text-center">Wrong: <span class="wrong-color size28">{{wrongAnswer}}</span></div>
+
+</div>
+
+
+<div class="start-button" *ngIf="showAgainButton" (click)="startAgain()">
+  <div class="button-text text-center">START!</div>
+</div>
+
+
+<div *ngIf="!showAgainButton" class="text-center">
+  <div class="expression">
+    <div *ngIf="sign">
+      {{firstNumber}} x {{secondNumber}}
+    </div>
+    <div *ngIf="!sign">
+      {{currentAnswer}} / {{firstNumber}}
+    </div>
+  </div>
+
+  <div class="input-container ">
+    <input class="custom-input" type="text" [(ngModel)]="inputValue" #box (keyup)="valuechange($event)"
+           (keyup.enter)="onEnter()">
+  </div>
+
+  <div class="error-message" *ngIf="errorMessage">ERROR! THINK WELL!</div>
+
+</div>
+
+
+
+

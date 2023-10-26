@@ -1,0 +1,26 @@
+.start-button{
+  width: 180px;
+  height: 50px;
+  background-color: var(--color-secondary-2-3);
+  color: #fff;
+  border-radius: 12px;
+  line-height: 49px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+.level-main-title{
+  padding-top: 36px;
+  font-size: 44px;
+}
+.level-select-level{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.level-select-tasks-number{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.level-button-start{
+  margin-top: 50px;
+  padding-bottom: 50px;
+}

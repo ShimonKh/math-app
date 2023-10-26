@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Carter One', cursive;
+
+}
+.body-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:-2;
+  /*background-image: url('assets/math.jpg');;*/
+  background-color: #d0d0d0;
+}
+.font-gochi-hand{
+  font-family: 'Gochi Hand', cursive;
+}
+.font-carter-one{
+  font-family: 'Carter One', cursive;
+}
+@media screen and (min-width: 301px)  {
+  .main-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    min-height: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .main-container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    min-height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+}
+
+/*======================================== COLORS ===============================================*/
+:root {
+  --color-primary-0 : #87A33C ;	/* Main Primary color */
+  --color-primary-1 : #DDF1A7 ;
+  --color-primary-2 : #AFC86A ;
+  --color-primary-3 : #65801D ;
+  --color-primary-4 : #415705 ;
+  --color-secondary-1-0 : #A33D4B ;	/* Main Secondary color (1) */
+  --color-secondary-1-1 : #F2A8B2 ;
+  --color-secondary-1-2 : #C96B78 ;
+  --color-secondary-1-3 : #801E2B ;
+  --color-secondary-1-4 : #570510 ;
+  --color-secondary-2-0 : #553073 ;	/* Main Secondary color (2) */
+  --color-secondary-2-1 : #957AAB ;
+  --color-secondary-2-2 : #72508E ;
+  --color-secondary-2-3 : #3D1A5B ;
+  --color-secondary-2-4 : #25073E ;
+  --color-right:#0fdc0f;
+  --color-error:#fb1d1d;
+}
+
+
+/*.color-primary-0 { color: #87A33C }	!* Main Primary color *!*/
+/*.color-primary-1 { color: #DDF1A7 }*/
+/*.color-primary-2 { color: #AFC86A }*/
+/*.color-primary-3 { color: #65801D }*/
+/*.color-primary-4 { color: #415705 }*/
+
+/*.color-secondary-1-0 { color: #A33D4B }	!* Main Secondary color (1) *!*/
+/*.color-secondary-1-1 { color: #F2A8B2 }*/
+/*.color-secondary-1-2 { color: #C96B78 }*/
+/*.color-secondary-1-3 { color: #801E2B }*/
+/*.color-secondary-1-4 { color: #570510 }*/
+
+/*.color-secondary-2-0 { color: #553073 }	!* Main Secondary color (2) *!*/
+/*.color-secondary-2-1 { color: #957AAB }*/
+/*.color-secondary-2-2 { color: #72508E }*/
+/*.color-secondary-2-3 { color: #3D1A5B }*/
+/*.color-secondary-2-4 { color: #25073E }*/
+
+
+/*========================================  GENERAL ===============================================*/
+.inlineBlocklDisplay{
+  display: inline-block !important;
+}
+
+
+.text-center {
+  text-align: center !important;
+}
+
+app-add-menu,
+app-tasks-number,
+app-input-answer{
+  display: block;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.size28 {
+  font-size: 28px;
+}
+.size32{
+  font-size: 32px;
+}
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.positionRelative{
+  position: relative;
+}
+.positionAbsolute{
+  position: absolute;
+}
+.start-button{
+  width: 180px;
+  height: 50px;
+  background-color: var(--color-secondary-2-3);
+  color: #fff;
+  border-radius: 12px;
+  line-height: 49px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+

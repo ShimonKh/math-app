@@ -1,0 +1,11 @@
+<div class="expression-container size32 font-carter-one text-center">
+  {{firstNumber}} <span *ngIf="sign">+</span><span *ngIf="!sign">-</span> {{secondNumber}}
+  <span *ngIf="showError" class="error-span">&ne; {{currentAnswer}} </span>
+</div>
+<app-input-answer class="text-center" (getInputValue)="getInputValue($event)"></app-input-answer>
+<!--<button (click)="uuu()">start</button>-->
+<!--<button (click)="aaaa()">ens</button>-->
+
+
+
+

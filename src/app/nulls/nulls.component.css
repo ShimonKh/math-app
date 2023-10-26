@@ -1,0 +1,61 @@
+
+
+.info {
+  width: 150px;
+  font-size: 24px;
+  float: left;
+  color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.right-color {
+  color: #0fdc0f;
+}
+
+.wrong-color {
+  color: #fb1d1d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.size28 {
+  font-size: 28px;
+}
+
+.tasks-left-color {
+  color: #ec43ec;
+}
+
+.start-button {
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  background-color: #E91E63;
+
+  margin: 20px auto 0 auto;
+}
+
+.button-text {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.clearfix {
+  /*content: "";*/
+  /*display: table;*/
+  /*clear: both;*/
+  height: 50px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+.single-square{
+  width: 30px;
+  height:30px;
+  border:1px solid firebrick;
+  border-right-color: transparent;
+  float: left;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.single-square:nth-last-child(1){
+  border-right-color: firebrick
+}
+.filled-background{
+  background-color: #b268a5;
+}

@@ -1,0 +1,42 @@
+.select-button{
+  width: 180px;
+  height: 80px;
+  margin: 0 10px;
+  color: var(--color-primary-1);
+  background: var(--color-primary-4);
+  border-color: var(--color-primary-3) ;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 12px;
+  -moz-transition: color  .2s ease-in, font-size .3s ease-in;
+  -o-transition: all .2s ease-in, font-size .3s ease-in;
+  -webkit-transition: all .2s ease-in, font-size .3s ease-in;
+  transition: all .2s ease-in, font-size .3s ease-in;
+  font-size: 18px;
+}
+.select-button:hover
+{
+  color:  var(--color-primary-3);
+  background:  var(--color-primary-1);
+  font-size: 24px;
+}
+.select-button.isActive
+{
+  color:  var(--color-primary-3);
+  background:  var(--color-primary-1);
+  font-size: 18px;
+}
+.select-button.isActive:hover{
+  font-size: 24px;
+}
+.addition-menu-content{
+  width: 100%;
+
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.addition-menu{
+  text-align: center;
+}
+

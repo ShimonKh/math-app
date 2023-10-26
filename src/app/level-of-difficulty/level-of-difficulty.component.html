@@ -1,0 +1,11 @@
+<div class="level-main-title text-center font-carter-one"> Select the required level </div>
+<app-add-menu class="level-select-level"
+  [option-list]="selectedTask"
+  (choosenLevel)="getChoosenLevel($event)"
+></app-add-menu>
+<app-tasks-number class="level-select-tasks-number" (getSelectedTasksNumber)="getTasksNumber($event)"></app-tasks-number>
+<div class="level-button-start">
+  <div class="start-button text-center pointer" (click)="startExercise()" >START</div>
+</div>
+
+

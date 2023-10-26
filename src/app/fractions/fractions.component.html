@@ -1,0 +1,5 @@
+<div class="fractions-container" >
+
+  <div class="single-square" *ngFor="let fraction of checkedSquaresArray, index as i" (click)="clickSquare(i)"
+       [ngClass]="checkedSquaresArray[i]? 'filled-background': ''"></div>
+</div>

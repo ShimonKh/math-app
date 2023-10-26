@@ -1,0 +1,28 @@
+.main-menu-container{
+  padding-bottom: 30px;
+}
+.main-menu{
+  text-align: center;
+  font-size: 32px;
+  width: 50%;
+  height: 75px;
+  margin: 24px auto;
+  background-color: var(--color-primary-1);
+  border: 3px solid var(--color-primary-4);
+  color: var(--color-primary-4);
+  border-radius: 12px;
+  line-height: 66px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+.main-menu:hover{
+  background-color: var(--color-secondary-1-1);
+  color: var(--color-secondary-1-4);
+  border: 3px solid var(--color-secondary-1-4);
+}
+.home-main-title{
+  padding-top: 36px;
+  font-size: 44px;
+}

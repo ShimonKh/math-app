@@ -1,0 +1,7 @@
+.error-span{
+  margin-left: 10px;
+  color: var(--color-error);
+}
+.expression-container{
+  margin-top: 30px;
+}

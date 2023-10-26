@@ -1,0 +1,10 @@
+<div class="addition-menu font-gochi-hand">
+  <div class="select-button inlineBlocklDisplay pointer" [ngClass]="{isActive: item.isActive}" *ngFor="let item of optionList" (click)="getExercise(item)">
+    <div class="addition-menu-content">
+      <div class="" >{{item.firstView}}</div>
+      <div *ngIf="item.secondView && item.secondView.length>0" >{{item.secondView}}</div>
+    </div>
+  </div>
+</div>
+
+

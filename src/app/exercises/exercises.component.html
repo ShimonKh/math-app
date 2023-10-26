@@ -1,0 +1,29 @@
+<div class="exercise-container positionRelative">
+  <div class="flex-container size28">
+    <div class="flex-item">Total: <span>{{totalTasks}}</span></div>
+    <div class="flex-item">Tasks left: <span class="tasks-left-color">{{tasksLeft}}</span></div>
+    <div class="flex-item ">Right: <span style="color: var(--color-right);">{{rightAnswer}}</span></div>
+    <div class="flex-item ">Wrong: <span style="color: var(--color-error);">{{wrongAnswer}}</span></div>
+  </div>
+  <!--<div *ngIf="showTask">-->
+  <div *ngIf="showTask">
+    <router-outlet></router-outlet>
+    <div class=" error-message text-center" *ngIf="showError">ERROR</div>
+  </div>
+  <!--<div *ngIf="showStatistics">-->
+  <div *ngIf="true" class="text-center">
+    <div class="statistic">
+      <!--<div>total tasks : {{totalTasks}}</div>-->
+      <!--<div>total time : {{statistic.time}}</div>-->
+      <!--<div>quick : {{statistic.time}}</div>-->
+      <!--<div>slow : {{statistic.time}}</div>-->
+    </div>
+    <div class="level-button-start">
+      <div class="start-button text-center pointer" (click)="repeatExercise()">REPEAT</div>
+    </div>
+  </div>
+  <div class="positionAbsolute return-link pointer" (click)="returnToMain()">return to main menu</div>
+</div>
+<!--<div class="start-button" *ngIf="showAgainButton" (click)="startAgain()">-->
+<!--<div class="button-text text-center">START!</div>-->
+<!--</div>-->

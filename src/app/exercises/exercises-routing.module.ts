@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {ExercisesComponent} from './exercises.component';
 import {AddingComponent} from './adding/adding.component';
 import {MultiNullsComponent} from './multi-nulls/multi-nulls.component';
+import {QuadraticEquationComponent} from './quadratic-equation/quadratic-equation.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: 'adding',
         component: AddingComponent
+      },
+      {
+        path: 'quadraticEquation',
+        component: QuadraticEquationComponent
       },
       {
         path: 'nulls',

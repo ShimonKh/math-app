@@ -1,0 +1,20 @@
+<div class="expression-container">
+  <h1>
+    <span>x<sup>2</sup></span>
+    <span *ngIf="Sindex&&Sindex<0"> {{Sindex}}x </span>
+    <span *ngIf="Sindex&&Sindex>0"> +{{Sindex}}x </span>
+    <span *ngIf="Pindex&&Pindex<0">{{Pindex}}</span>
+    <span *ngIf="Pindex&&Pindex>0">+{{Pindex}}</span>
+    <span> = 0</span>
+  </h1>
+  <span *ngIf="showError" class="error-span">try again</span>
+  <div>
+    <input class="custom-input" type="text" autofocus tabindex="1" decimalNumber [(ngModel)]="answer1"
+           (keyup)="inputKeyup()" #firstElement>
+    <input class="custom-input" type="text" tabindex="2" decimalNumber [(ngModel)]="answer2" (keyup)="inputKeyup()">
+
+  </div>
+  <div class="check-button text-center pointer" tabindex="3" (click)="checkAnswer()" (keyup.enter)="checkAnswer()">
+    Check
+  </div>
+</div>

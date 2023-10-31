@@ -5,6 +5,7 @@ import {TasksNumberComponent} from './components/tasks-number/tasks-number.compo
 import {InputAnswerComponent} from './components/input-answer/input-answer.component';
 import {FormsModule} from '@angular/forms';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import {DecimaNumberDirective} from './directives/decimal-number.directive';
 
 
 
@@ -17,12 +18,14 @@ import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
   declarations: [
     AddMenuComponent,
     TasksNumberComponent,
-    InputAnswerComponent
+    InputAnswerComponent,
+    DecimaNumberDirective
   ],
   exports: [
     AddMenuComponent,
     TasksNumberComponent,
-    InputAnswerComponent
+    InputAnswerComponent,
+    DecimaNumberDirective
   ],
   providers: [
   ]

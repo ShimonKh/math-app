@@ -33,6 +33,9 @@ export class ExercisesComponent implements OnInit {
 
   ngOnInit() {
     this.totalTasks = this._sharedService.getNumberOfTasks();
+    if(!this.totalTasks){
+      this.totalTasks=15;
+    }
     this.tasksLeft = this.totalTasks;
     this.difficult = this._sharedService.getDifficulty();
     this.showTask = true;
@@ -49,7 +52,7 @@ export class ExercisesComponent implements OnInit {
       this.rightAnswer++;
     } else {
       this.wrongAnswer++;
-      this.isShowError();
+      // this.isShowError();
     }
     if (this.tasksLeft === 0) {
       const statisticTemp = this._sharedService.getStatisics();

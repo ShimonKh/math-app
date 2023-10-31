@@ -21,8 +21,9 @@ export class SharedServiceService {
   }
 
   // returns a random number between min and max (both included):
-  getRandom(min: number, max: number) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  getRandom(min: number, max: number, excludeZero = false): number {
+    let num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return excludeZero ? num : num === 0 ? this.getRandom(min, max, true) : num;
   }
 
   getRndBoolean() {

@@ -7,6 +7,7 @@ import {ExercisesComponent} from './exercises.component';
 import {ExercisesRoutingModule} from './exercises-routing.module';
 import {AddingComponent} from './adding/adding.component';
 import {MultiNullsComponent} from './multi-nulls/multi-nulls.component';
+import {QuadraticEquationComponent} from './quadratic-equation/quadratic-equation.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import {MultiNullsComponent} from './multi-nulls/multi-nulls.component';
   declarations: [
     ExercisesComponent,
     AddingComponent,
-    MultiNullsComponent
+    MultiNullsComponent,
+    QuadraticEquationComponent
   ]
 })
 export class ExercisesModule { }

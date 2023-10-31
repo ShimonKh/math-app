@@ -1,0 +1,38 @@
+.error-span{
+  margin-left: 10px;
+  color: var(--color-error);
+}
+.expression-container{
+  margin-top: 30px;
+  text-align: center;
+}
+.check-button{
+  width: 180px;
+  height: 50px;
+  background-color: var(--color-secondary-2-1);
+  color: #fff;
+  border-radius: 12px;
+  line-height: 49px;
+  font-size: 24px;
+  margin: 20px auto;
+}
+.check-button:focus, .check-button:hover{
+  background-color: var(--color-secondary-2-3);
+}
+.custom-input {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  border: 2px solid var(--color-secondary-2-1);
+  margin: 10px 2px 0 2px;
+  -moz-transition: all  .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+.custom-input:focus,
+.custom-input:active
+{
+  outline: none;
+  border: 2px solid var(--color-secondary-2-3);
+}
